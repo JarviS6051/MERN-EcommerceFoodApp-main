@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BaseUrl='https://fakestoreapi.com/products'
+const BaseUrl = 'https://foodbackend-9rp4.onrender.com/api/products';
 
 export const getAllCategories = async () =>{
     const url= `${BaseUrl}/categories`;
