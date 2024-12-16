@@ -1,6 +1,6 @@
 import axios from "axios";
 
-cconst BaseUrl='https://fakestoreapi.com/products'
+const BaseUrl='https://fakestoreapi.com/products'
 
 export const getAllCategories = async () =>{
     const url= `${BaseUrl}/categories`;
