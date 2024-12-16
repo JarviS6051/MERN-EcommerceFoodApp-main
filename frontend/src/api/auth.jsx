@@ -1,19 +1,17 @@
 import axios from "axios";
 
-export const userLogin = async (email, password) =>{
+export const userLogin = async (email, password) => {
+    // Update the URL to use the deployed backend on Render
+    const url = `https://foodbackend-9rp4.onrender.com/api/user/login`;  // <-- Updated URL
     
-    //const url='https://api.escuelajs.co/api/v1/auth/login';
-    //const url = 'https://fakestoreapi.com/auth/login';
-    const url = `https://localhost:5000/api/user/login`;
-    try{
-        const {data} = await axios.post(url, {
+    try {
+        const { data } = await axios.post(url, {
             email: email,
             password: password
-        })
+        });
         
         return data;
-    }catch(err){
+    } catch (err) {
         return err;
     }
-
 }
