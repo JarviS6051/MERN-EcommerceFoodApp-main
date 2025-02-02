@@ -5,7 +5,7 @@ const cors = require("cors");
 
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://yashb150603:Yashbagga345@foodcommerce.rtrgx.mongodb.net/?retryWrites=true&w=majority&appName=FoodCommerce')
+mongoose.connect('mongodb+srv://yashb150603:Yashbagga345@foodcommerce.rtrgx.mongodb.net/')
   .then(() => console.log('Connected!'));
 
 const app = express();
